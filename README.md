@@ -1,12 +1,6 @@
 # MechaCar_Statistical_Analysis
 Module 15 – R
 
-•	Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
-•	Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
-•	Run t-tests to determine if the manufacturing lots are statistically different from the mean population
-•	Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
-
-
 ## Linear Regression to Predict MPG
 
 Goal: Produce a linear model that predicts the mpg of MechaCar prototypes using the given variables:
@@ -30,13 +24,13 @@ The variance of the PSI of the suspension coils must not have a variance greater
 
 ## T-Tests on Suspension Coils
 
-We will use the t.test function on the subsets of Coils by Manufacturing Lot to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+I used the t.test function on the subsets of Coils by Manufacturing Lot to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 
 #### Overall Coil PSI T-Test, mu=1500:
 
 ![CoilPSI](https://user-images.githubusercontent.com/95837693/162553836-68d3a983-0a4c-47db-9044-73aeedc533f6.PNG)
 
-Overall, the PSI of the 150 samples in the Coil file has a mean of 1498.78 with a p-value of .06, so we reject the null hypothesis. We conclude that the overall PSI is not statistically different than 1500.
+Overall, the PSI of the 150 samples in the Coil data has a mean of 1498.78 with a p-value of .06, so we reject the null hypothesis. We conclude that the overall PSI is not statistically different than 1500.
 
 #### Lot 1 Coil PSI T-Test, mu=1500:
 
@@ -59,4 +53,4 @@ Lot 3’s mean PSI From it’s 50 samples, is 1496.14 PSI. The p-value is .042, 
 
 ## Study Design: MechaCar vs Competition
 
-The metrics I would test against the competition are mpg and safety ratings to compare MechaCar to the competition. The null hypothesis would be that on each of these measurements, MechaCar and the competition are do not show a statistical difference. I would run a two-sample t-test on each of the measures to show that the MechaCar mpg & safety ratings are higher, using the p-value to show the significance of difference and the mean from the t-test to show overall difference. To run these tests the mpg and safety ratings from both MechaCar and a number (at least 20) of competitors would be required. 
+The metrics I would test against the competition are mpg and safety ratings to compare MechaCar to the competition. The null hypothesis would be that on each of these measurements, MechaCar and the competition do not show a statistical difference. I would run a two-sample t-test on each of the measures to show that the MechaCar mpg & safety ratings are higher, using the p-value to show the significance of difference and the mean from the t-test to show overall difference. To run these tests the mpg and safety ratings from both MechaCar and a number (at least 20) of competitors would be required. 
